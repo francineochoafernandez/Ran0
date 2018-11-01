@@ -1,4 +1,3 @@
-# Ran0
 //Generador Minimo de numeros random de Park and Miller
 /*Regresa una desviacion de numeros random entre 0 y 1
 Periodo para ran0 es  2^31 − 2 ≈ 2.1 × 10^9.
@@ -42,15 +41,6 @@ typedef struct Ran0
     cout<<"--";
     cout<<"\n";
   }
-  
-  void printran()
-  {
-    for (int i=0; i<100; i++)
-    {
-      //cout << ran0(idum) << endl;
-      cout<< setw(15) << i+1 << setw(15) << n.ran0(idum) << endl;
-    }
-  }
 }R0;
 
 
@@ -63,10 +53,12 @@ int main ()
   n.line();
   cout<< setw(35) << "100 numeros usando ran0" << endl;
   n.line();
-  
-  n.printran()
 
-  
+  for (int i=0; i<100; i++)
+  {
+    //cout << ran0(idum) << endl;
+    cout<< setw(15) << i+1 << setw(15) << n.ran0(idum) << endl;
+  }
 
  return 0;
 }
